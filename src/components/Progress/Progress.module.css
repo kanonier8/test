@@ -1,0 +1,11 @@
+.progress {
+    width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.progressItemList {
+    display: flex;
+    align-items: center;
+}

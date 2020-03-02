@@ -1,0 +1,8 @@
+.image {
+    width: 150px;
+    display: block;
+}
+.image img {
+    max-width: 100%;
+    vertical-align: top;
+}

@@ -1,0 +1,12 @@
+.title {
+    color: #fff;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #5a3a89;
+    height: 25px;
+    width: 80px;
+    font-size: 18px;
+    line-height: 25px;
+}

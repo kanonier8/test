@@ -1,24 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { Page } from './page';
+import { Button } from './components/Button';
+import { Product, ProductMobile } from './components/Product';
+import { LogoWhite, LogoBlue } from "./components/Logo";
+import {Progress} from "./components/Progress";
+import {StartPage} from "./page/StartPage";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Page>
+        <StartPage/>
+      </Page>
+
+        <Button isMargin isSuccess>Button 1</Button>
+        <Button isMargin>Button 2</Button>
+        <Button>Button 3</Button>
+
+        <Product />
+        <ProductMobile />
+        <LogoBlue />
+        <LogoWhite />
+
+        <div>
+          <Progress questions={[{}, {}, {}, {}, {}]}/>
+        </div>
+
     </div>
   );
 }

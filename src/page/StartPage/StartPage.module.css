@@ -1,0 +1,23 @@
+.start {
+    min-width: 320px;
+    min-height: 310px;
+    background: url('img/mobile.jpg') no-repeat center;
+    background-size: auto;
+    padding: 12px;
+    box-sizing: border-box;
+}
+.container {
+    margin: 0 auto;
+    padding: 0;
+    width: 300px;
+}
+@media screen and (max-width: 320px){
+    .start {
+        background-size: 320px;
+        background-position: top center;
+        min-height: 290px;
+    }
+    .container {
+        width: 280px;
+    }
+}
