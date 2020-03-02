@@ -1,19 +1,6 @@
 import React from 'react';
+import { IQuestion } from '../../redux/reducers/quizReducer';
 import styles from './Question.module.css';
-
-export interface IAnswer {
-    id: string;
-    title: string;
-}
-
-export interface IQuestion {
-    id: string;
-    title: string;
-    image: string;
-    answers: {
-        data: IAnswer;
-    }
-}
 
 interface IQustionProps {
     data: IQuestion
